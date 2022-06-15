@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./Layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { ChangeThemeButton } from "./ChangeThemeButton";
 
 const name = "shibattyo";
 export const siteTitle = "Next.js blog";
@@ -14,6 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="favicon.ico"></link>
       </Head>
       <header className={styles.header}>
+        <ChangeThemeButton />
         {home ? (
           <>
             <img
